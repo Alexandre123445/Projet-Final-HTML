@@ -1,0 +1,124 @@
+
+body {
+    background-color: rgb(148, 233, 233);
+    height:100%;
+}
+.principal
+{
+    display : grid;
+    grid-template-columns : 5fr 5fr;
+    column-gap : 10px;
+    grid-template-rows : 500px;
+    height:100%;
+}
+#introduction {
+    border: 5px solid rgb(34, 103, 100);
+    font-size: 35px;
+    font-family: "Times New Roman", Times, serif;
+    display:block;
+    overflow:auto;
+    padding-bottom: 20px;    
+}
+.tableauchien {
+    border: 5px solid rgb(34, 103, 100);
+    display: block;
+    overflow: auto;
+    text-align: center;
+    font-size: 38px;
+    padding-bottom: 15px;
+    padding-top: 5px
+}
+.contenu {
+    display: block;
+    height:100%;
+}
+.imagedechien {
+    width: 1000px;
+    height: 550px;
+    border: 5px solid rgb(34, 103, 100);
+}
+.lettrine
+{
+    position : relative;
+    float : left;
+    font-size : 45px;
+    width : 30px;
+    top : 24px;
+}
+.entete {
+    height : 30px;
+    width : 100%;
+    border : 3px solid rgb(13, 77, 75);
+    position : relative;
+    bottom : 10px;
+    display:flex;
+    justify-content:space-around;
+
+}
+.lienpage {
+    display: inline-block;
+    border: 3px solid rgb(13, 77, 75);
+    height: 90%;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+}
+a {
+    color: rgb(65, 129, 127);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(100, 190, 190);
+}
+    a:active {
+        background-color: lightblue;
+    }
+
+table {
+    width: 100%;
+    font-size:14pt;
+}
+
+
+ul {    
+    font-size: 14pt;
+}
+
+li:nth-child(odd) {
+    background-color: rgb(100, 190, 190);
+}
+
+    @media only screen and (max-width: 1200px) {
+        .principal {
+            grid-template-columns: 10fr;
+            grid-template-rows: 250px 250px;
+        }
+
+        .contenu {
+            display: block;
+            position: relative;
+            top: 300px;
+        }
+
+        #introduction {
+            display: block;
+            overflow: auto;
+        }
+
+        .tableauchien {
+            display: block;
+            overflow: auto;
+        }
+
+        .imagedechien {
+            display: block
+        }
+
+        table {
+            width: 100%;
+            font-size: 14pt;
+        }
+    }
+
+ 
